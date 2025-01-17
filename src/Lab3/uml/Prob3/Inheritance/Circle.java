@@ -1,13 +1,12 @@
 package Lab3.uml.Prob3.Inheritance;
 
-public class Circle {
-
-    protected double radius;
+public class Circle extends Cylinder {
+    private double radius;
 
     public Circle(double radius) {
+        super(radius);
         this.radius = radius;
     }
-
     public double getRadius() {
         return radius;
     }

@@ -2,13 +2,17 @@ package Lab3.uml.Prob3.Inheritance;
 
 import Lab3.uml.Prob3.Composition.Circle;
 
-public class Cylinder extends Circle {
-
+public class Cylinder {
     private double height;
+    private double radius;
 
-    public Cylinder(double radius, double height) {
-        super(radius);
+    public Cylinder(double radius) {
+        this.radius = radius;
+    }
+
+    public Cylinder(double height, double radius) {
         this.height = height;
+        this.radius = radius;
     }
 
     public double getHeight() {
@@ -16,6 +20,6 @@ public class Cylinder extends Circle {
     }
 
     public double computeVolume() {
-        return computeArea() * height;
+        return Math.PI * radius * radius * height;
     }
 }
