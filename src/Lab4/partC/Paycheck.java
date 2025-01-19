@@ -18,15 +18,9 @@ public class Paycheck {
         this.socialSecurity = socialSecurity;
     }
 
-    public void print() {
-        System.out.println("Gross Pay: " + grossPay);
-        System.out.println("FICA: " + fica);
-        System.out.println("State Tax: " + state);
-        System.out.println("Local Tax: " + local);
-        System.out.println("Medicare: " + medicare);
-        System.out.println("Social Security: " + socialSecurity);
-        System.out.println("Net Pay: " + getNetPay() +"\n");
-    };
+    public String print(){
+        return "Gross Pay: " + grossPay + " and Net Pay: " + getNetPay();
+    }
 
     public double getNetPay() {
         return grossPay - (fica + state + local + medicare + socialSecurity);

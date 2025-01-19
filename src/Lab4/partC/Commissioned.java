@@ -13,12 +13,11 @@ public class Commissioned extends Employee{
     }
 
     @Override
-    public double calcGrossPay(int month, int yr) {
+    public double calcGrossPay(int month, int year) {
         double totalOrderAmount = 0.0;
 
-        // calculate total sales for a given month
         for(Order order : orders) {
-            if(order.getOrderDate().getMonthValue() == month && order.getOrderDate().getYear() == yr) {
+            if(order.getOrderDate().getMonthValue() == month && order.getOrderDate().getYear() == year) {
                 totalOrderAmount += order.getOrderAmount();
             }
         }
