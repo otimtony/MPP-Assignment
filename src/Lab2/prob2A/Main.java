@@ -7,6 +7,7 @@ public class Main {
         System.out.println("Student Name: " + student.getName() + " Student Grade: " + student.getGradeReport() );
 
         GradeReport report = student.getGradeReport();
+        student.setGradeReport(report);
         System.out.println("Student Name: " + report.getStudent().getName() + " Student Grade: " + report.getStudent().getGradeReport());
 
     }

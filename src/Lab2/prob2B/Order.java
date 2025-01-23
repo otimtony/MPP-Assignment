@@ -10,8 +10,7 @@ public class Order {
     public Order(String orderId) {
         this.orderId = orderId;
         this.orderLines = new ArrayList<>();
-        // Create an OrderLine instance whenever an Order is created
-        OrderLine orderLine = new OrderLine(this);  // OrderLine contains the Order instance
+        OrderLine orderLine = new OrderLine(this);
         this.orderLines.add(orderLine);
     }
 
