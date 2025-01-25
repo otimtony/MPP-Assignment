@@ -1,0 +1,5 @@
+a:
+In order to resolve the diamond conflict, Java requires D to either explicitly override the conflicting method by giving its own implementation or by using the super keyword to specify which implementation to call.
+
+b:
+Java 8 allows interface D to declare a default method to address conflicts that may arise. If D cannot resolve these conflicts, it is required that the implementing classes provide an implementation.
