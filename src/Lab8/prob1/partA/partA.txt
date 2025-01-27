@@ -1,0 +1,9 @@
+Lambda Expressions
+
+i. Runnable Lambda Expression
+   -Parameters: The Runnable interface has no parameters.
+   -Free Variables: s and t
+
+ii. Comparator<String> Lambda Expression
+    -Free Variables: ignoreCase
+    -Parameters: s and t of type string
