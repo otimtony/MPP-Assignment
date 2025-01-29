@@ -2,7 +2,7 @@ package Lab5.codeprob4.prob4;
 
 public class Item {
 	String name;
-	private Item(String name) {
+	public Item(String name) {
 		this.name = name;
 	}
 	public static Item createItem(String name) {

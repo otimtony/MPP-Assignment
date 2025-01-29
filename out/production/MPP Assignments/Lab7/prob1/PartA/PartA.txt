@@ -1,0 +1,10 @@
+Interfaces
+    -List
+    -Collection
+    -Iterable
+    -RandomAccess
+    -Cloneable
+    -Seriablizable
+
+Class
+    -AbstractList
